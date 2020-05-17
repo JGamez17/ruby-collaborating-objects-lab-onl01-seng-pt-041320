@@ -30,9 +30,11 @@ class Artist
     end
   end
   
-  def print_songs
-    songs.each do |x| 
-      puts x.names
+ def print_songs # prints all songs that belong to this artist. Stupid way of doing it, could've been done by pust printing everything from "songs" method. 
+        Song.all.each do |song|
+            if song.artist == self
+                puts song.name
+            end
+        end
     end
-  end  
 end
