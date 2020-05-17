@@ -35,6 +35,4 @@ class Artist
       put value.names
     end
   end  
-  
-    
 end
