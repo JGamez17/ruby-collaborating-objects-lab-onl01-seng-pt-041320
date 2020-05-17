@@ -6,7 +6,7 @@ class MP3Importer
   
   def files 
     files = Dir.entries(path)
-    files.select!
+    files.select {|x| x[/\.mp3$/]}
   end
   
   def import 
