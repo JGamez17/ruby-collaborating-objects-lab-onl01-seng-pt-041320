@@ -29,5 +29,12 @@ class Artist
       artist_name
     end
   end
+  
+  def print_songs
+    songs.each do |value| 
+      put value.names
+    end
+  end  
+  
     
 end
